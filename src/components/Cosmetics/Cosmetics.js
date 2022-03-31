@@ -1,22 +1,26 @@
-import React from "react";
+// import React from "react";
+// import { useEffect } from "react";
+// import { useState } from "react";
+// import Cosmetic from "../Cosmetic/Cosmetic";
 
-const Cosmetics = () => {
-    const cosmetics = [
-        {id: 1, name: 'Alta', price: 100},
-        {id: 2, name: 'palish', price: 200},
-        {id: 3, name: 'marish', price: 300},
-        {id: 4, name: 'bails', price: 400},
-        {id: 5, name: 'naris', price: 500},
-        {id: 6, name: 'pares', price: 600},
-    ]
-  return (
-    <div>
-      <h1>Welcome to my cosmetics store</h1>
-      {
-          cosmetics.map(cosmetic => console.log(cosmetic))
-      }
-    </div>
-  );
-};
+// const Cosmetics = () => {
+//     const [cosmetics,setCosmetics] = useState([]);
 
-export default Cosmetics;
+//     useEffect(() => {
+//        fetch('data.json')
+//        .then(res=> res.json())
+//        .then(data=> setCosmetics(data))  
+//     }, [])
+//   return (
+//     <div>
+//       <h1>Welcome to my cosmetics store</h1>
+//       {
+//           cosmetics.map(cosmetic => <Cosmetic key={cosmetic.id}
+//           cosmetic = {cosmetic}
+//           ></Cosmetic>)
+//       }
+//     </div>
+//   );
+// };
+
+// export default Cosmetics;
