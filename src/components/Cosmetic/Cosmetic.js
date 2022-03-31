@@ -1,16 +1,17 @@
 import React from "react";
 import { addToDb } from "../../utilities/fakedb";
 
-
 import "./Cosmetic.css";
 
 const Cosmetic = (props) => {
   const { name, price, id } = props.cosmetic;
-  const addToCart = (id) =>{
-         addToDb(id)
-}
+  const addToCart = (id) => {
+    addToDb(id);
+  };
 
-//    const addToCartWithParm = () => addToCart(id)
+  const removeFromCart = (id) => {
+    removeFromCart(id);
+  };
 
   return (
     <div className="product">
@@ -21,6 +22,7 @@ const Cosmetic = (props) => {
       </p>
       {/* <button onClick={addToCartWithParm}>Add to Cart</button> */}
       <button onClick={() => addToCart(id)}>Purchase</button>
+      <button onClick={() => removeFromCart(id)}>Remove</button>
     </div>
   );
 };
